@@ -5,7 +5,12 @@
   {mod, {'zugotestapp_app', []}},
   {applications,
    [kernel,
-    stdlib
+    stdlib,
+    poolboy,
+    erlport,
+    lager,
+    lager_syslog,
+    syslog
    ]},
   {env,[]},
   {modules, []},
