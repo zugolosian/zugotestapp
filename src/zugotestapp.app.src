@@ -1,8 +1,8 @@
-{application, 'zugotestapp',
- [{description, "An OTP application"},
-  {vsn, "0.1.0"},
-  {registered, []},
-  {mod, {'zugotestapp_app', []}},
+{application, zugotestapp,
+  [{description, ""},
+    {vsn, "0.1.0"},
+    {registered, [zugotestapp]},
+    {mod, {zugotestapp_app, []}},
     {applications,
       [kernel,
         stdlib,
@@ -13,10 +13,6 @@
         lager,
         lager_syslog
       ]},
-  {env,[]},
-  {modules, []},
-
-  {contributors, []},
-  {licenses, []},
-  {links, []}
- ]}.
+    {env, []},
+    {modules, []}
+  ]}.
